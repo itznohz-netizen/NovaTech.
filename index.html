@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NovaTech Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styleseet.css">
+    <link rel="icon" href="favicon.ico"
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">NovaTech</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item">
+            <a class="nav-link position-relative" href="#">
+                🛒 Cart 
+                <span id="cart-count" class="badge bg-danger">0</span>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Experience Innovation</h1>
+        <p class="lead">Premium Smart Products Built for the Future.</p>
+        <a href="#products" class="btn btn-light btn-lg">Shop Now</a>
+    </div>
+</section>
+
+<!-- Products -->
+<section id="products" class="container py-5 mt-5">
+    <h2 class="text-center mb-4">Our Products</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Nova Speaker</h5>
+                    <p class="card-text">$120</p>
+                    <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    <button class="btn btn-outline-dark mt-2 view-product"
+                        data-name="Nova Speaker"
+                        data-price="$120"
+                        data-bs-toggle="modal"
+                        data-bs-target="#productModal">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Nova Headset</h5>
+                    <p class="card-text">$80</p>
+                    <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    <button class="btn btn-outline-dark mt-2 view-product"
+                        data-name="Nova Headset"
+                        data-price="$80"
+                        data-bs-toggle="modal"
+                        data-bs-target="#productModal">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Nova Watch</h5>
+                    <p class="card-text">$150</p>
+                    <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    <button class="btn btn-outline-dark mt-2 view-product"
+                        data-name="Nova Watch"
+                        data-price="$150"
+                        data-bs-toggle="modal"
+                        data-bs-target="#productModal">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form class="w-50 mx-auto">
+            <input type="text" class="form-control mb-3" placeholder="Your Name">
+            <input type="email" class="form-control mb-3" placeholder="Your Email">
+            <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+            <button class="btn btn-dark w-100">Send</button>
+        </form>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="productModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Product Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p id="modal-product-name"></p>
+        <p id="modal-product-price"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-black text-white text-center py-3">
+    © 2026 NovaTech
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/dexter.js"></script>
+</body>
+</html>

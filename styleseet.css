@@ -1,0 +1,19 @@
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #111, #00adb5);
+    padding-top: 80px;
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+#cart-count {
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
